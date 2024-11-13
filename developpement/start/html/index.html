@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshomes</title>
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+    <!--Navbar start-->
+    <nav class="navbar">
+        <div class="navbar-top">
+            <a href="../html/index.html" class="logo">Bookshomes</a>
+            <div class="toggleMenu" id="toggleMenu">
+                <span class="toggleButton" id="toggleButton"></span>
+            </div>
+        </div>
+        <div class="navbar-bottom">
+            <form action="" class="input-submit-header">
+                <input type="text" class="search-header" >
+                <button>Rechercher</button>
+            </form>
+            <ul>
+                <li><a href="../html/index.html" class="">AudioBook</a></li>
+                <li><a href="../html/news.html" class="">News</a></li>
+                <li><a href="../html/personal.html">Mes lectures</a></li>  
+            </ul>
+        </div>
+        
+    </nav>
+
+    <!--Navbar end-->
+
+    <div class="container">
+        <!--Left sidebar-->
+        
+        <div class="left-sidebar">
+            
+            <div class="sidebar-profile-box">
+                <img src="../images/Couverture-Père-riche-Père-pauvre.png" width="100%" alt="Pere riche, Pere pauvre">
+                <div class="sidebar-profile-info">
+                    <img src="../images/kiyosaki.jpg" alt="rich Dad, poor dad">
+                    <h1>Barnabé Agueh</h1>
+                    <h3>Website Developper</h3>
+                    <ul>
+                        <li>Website build<span>1</span></li>
+                        <li>Student at freeCodeCamp <span>stage 2</span></li>
+                        
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="../images/items.png" alt="items">My items</a>
+                    <a href=""><img src="../images/premium.png" alt="premium_picture">Try Premium</a>
+                </div>
+            </div>
+        </div>
+
+        <!--main-content-->
+
+        <div class="main-content">
+            <div class="create-post">
+                <!--<div class="create-post-input">-->
+                   
+                    <div class="citation_box" id="citation_box">
+                        <p class="citation bold text_center">
+                            Seigneur, faites de moi, un instrument de votre paix
+                        </p>
+                        <i class="auteur">Saint François d'Assise</i>
+                    </div>
+                <!--</div>-->
+                <div class=" audio-book-field " id="audioBookField">
+                    <li class="active-link" onclick="generateAudioEntrepreneurs()"><img src="../images/marketplace.png" alt="photo">Business</li>
+                    <li onclick="generateAudioProfession()"><img src="../images/event.png" alt="Video">Profession</li>
+                    <li onclick="generateAudioFamily()"><img src="../images/event.png" alt="event">Famille</li>
+                    <li onclick="/*generateAudioMore()*/">Plus</li>
+                </div>
+            </div>
+
+            <div class="post" id="audioContainer">
+            </div>
+
+        </div>
+
+        <!--right-sidebar-->
+        <div class="right-sidebar"></div>
+    </div>
+    
+    <footer id="footer">
+       
+        <div class="footer-top ">
+            
+                <ul>
+                    <li><a href="#" >Accueil</a></li>
+                    <li><a href="#">Mes lectures</a></li>
+                    <li><a href="#">Contact</a></li>            
+                </ul>
+           
+        </div>
+
+        <div class="footer-bottom">
+             Bookshomes 2024
+        </div>
+      
+       
+    </footer>
+
+    
+</body>
+<script>
+   
+</script>
+<script src='../scripts/script.js'></script>
+<script src='../scripts/data_audio.js'></script>
+<script src='../scripts/data_citation.js'></script>
+
+
+<script src='../scripts/audioGenerator.js'></script>
+<script src='../scripts/citation.js'></script>
+
+</html>
