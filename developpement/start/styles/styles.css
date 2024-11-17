@@ -160,7 +160,7 @@ nav{
 @media (max-width:1000px)
 {
     .toggleMenu{
-        display: flex;
+        display: none;
     }
 }
 
@@ -221,10 +221,10 @@ nav{
 }
 
 @media (max-width:1000px){
-    .audio-book-field li{
+    /*.audio-book-field li{
         flex-basis: 10%; 
         
-    }
+    }*/
     .image-and-content{
         flex-direction: column;
     }

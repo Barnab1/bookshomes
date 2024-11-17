@@ -77,7 +77,7 @@ let boilerplateAudio = (htmlElementToInsertInto,objectToLoopThrough,category)=> 
             </div>
             `+ (objectToLoopThrough).map((x)=>{
     
-            let {audio,desc,id,img, title} = x;
+            let {audio,desc,id,img, title,catg} = x;
             return  ` <div class="audio_book">
                         <h3 class="title_audio">${title}:</h3>
                         <div class="image-and-content">
@@ -89,7 +89,7 @@ let boilerplateAudio = (htmlElementToInsertInto,objectToLoopThrough,category)=> 
                             </div>
                         </div>
                         <div class="add_icon">
-                            <span class="add_audio" onclick=addToPlayList(${id})>+</span>
+                            <span class="add_audio" onclick="addToPlayList('${audio}','${catg}')">+</span>
                         </div>
                     </div>`
         }).join(""));
@@ -101,13 +101,8 @@ let boilerplateAudio = (htmlElementToInsertInto,objectToLoopThrough,category)=> 
             </div>
         `
     }
-
-   
-
-    /***
- * END
- */
 }
+
 
 
 /***

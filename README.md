@@ -8,5 +8,5 @@ IMPORTANT:
 The first and only purpose is to make a largest
 repository of audio books easier to listen and well done.
 
-That said, I'm keep working on approaches that will help me
+That said, I keep working on approaches that will help me
 personalizing user experiment with the website
